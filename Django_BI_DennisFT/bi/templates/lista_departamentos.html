@@ -1,0 +1,23 @@
+<H2>Departamentos Registrados</H2>
+
+
+<table border=1>
+	<tr><td>codigo</td>
+	<td>Nombre</td>
+	</tr>
+
+		{% for dato in datos %}
+
+	
+	<tr>
+		<td>{{dato.codigodepartamento}}</td>
+	
+		<td>{{dato.nombredepartamento}}</td>
+		{% empty %}
+		Aún no hay Departamentos registradas
+		{% endfor %}
+	</tr>
+</table>
+
+
+

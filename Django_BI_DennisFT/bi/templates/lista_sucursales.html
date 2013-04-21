@@ -1,0 +1,29 @@
+<H2>Productos Registrados</H2>
+
+<table border=1>
+	<tr><td>codigo</td>
+	<td>Nombre</td>
+	<td>Departamento</td>
+	</tr>
+
+
+
+	{% for dato in datos %}
+	<tr>
+	<td><B>{{dato.codigosucursal}}</B></td>
+	
+	<td><b>{{dato.nombresucursal }}<b></td>
+	<td><b>{{dato.codigoDepartamento.nombredepartamento }}<b></td>
+	{% empty %}
+	Aún no hay sucursales registradas
+	{% endfor %}
+	
+
+
+	</tr>
+	
+
+
+
+</table>
+

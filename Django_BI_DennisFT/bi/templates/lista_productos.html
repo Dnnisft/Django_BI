@@ -1,0 +1,19 @@
+<H2>Productos Registrados</H2>
+<table border=1>
+
+	<tr><td>codigo </td>
+	<td>Nombre</td>
+	</tr>
+		
+
+	{% for dato in datos %}
+	<tr>
+	<td><B>{{dato.codigoproducto}}</B></td>
+
+	<td><b>{{dato.nombreproducto}}<b></td>
+	{% empty %}
+	<li>Aún no hay productos registrados</li>
+	{% endfor %}
+	
+	</tr>
+</table>

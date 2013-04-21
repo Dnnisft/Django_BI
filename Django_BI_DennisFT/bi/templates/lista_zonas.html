@@ -1,0 +1,22 @@
+<H2>Zonas Registradas</H2>
+
+
+<table border=1>
+	<tr><td>codigo</td>
+	<td>Nombre</td>
+	<td>Descripcion</td>
+	</tr>
+	
+	{% for dato in datos %}
+	<tr>
+	<td><B>{{dato.codigozona}}</B></td>
+	
+	<td><b>{{dato.nombrezona}}</b></td>
+	{% empty %}
+	Aún no hay zonas registradas
+	{% endfor %}
+	
+	</tr>
+
+
+</table>

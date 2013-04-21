@@ -1,0 +1,27 @@
+<H2>Productos Registrados</H2>
+
+<table border=1>
+	<tr><td>codigo</td>
+	<td>Nombre</td>
+	<td>Descripcion</td>
+	</tr>
+	
+
+
+	{% for dato in datos %}
+
+	<B>{{dato.codigoventa}}</B>
+
+	<b>{{dato.codigocliente.nombre1}}<b>
+	<b>{{dato.codigocliente.apellido1}}<b>
+	<b>{{dato.Fecha_registro}}<b>
+	<b>{{dato.totalventa}}<b>
+	<b>{{dato.codigosucursal.nombresucursal}}<b>
+	
+	{% empty %}
+	Aún no hay ventas registradas
+	{% endfor %}
+	
+
+
+

@@ -1,0 +1,22 @@
+<H2>Subcategorias Registradas</H2>
+
+<table border=1>
+    <tr><td>codigo</td>
+    <td>Nombre</td>
+    <td>Descripcion</td>
+    <td>Categoria</td>
+    </tr>
+
+    
+    {% for dato in datos %}
+<tr>
+    <td><b>{{ dato.codigosubcategoria }}</b></td>
+
+    <td><b>{{ dato.nombresubcategoria }}</b></td>
+    <td><b>{{ dato.descripcionsubcategoria }}</b></td> 
+    <td><b>{{ dato.codigocategoria.nombrecategoria }}</b></td>
+    {% empty %}
+        <td colspan="4">empty</td>
+    {% endfor %}
+    </tr>
+</table>

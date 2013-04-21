@@ -1,0 +1,28 @@
+<H2>Clientes Registrados</H2>
+
+
+<table border=1>
+	<tr><td>codigo</td>
+	<td>Nombres</td>
+	<td>Apellidos</td>
+	</tr>
+	
+
+
+	{% for dato in datos %}
+	<tr>
+	
+	<td><B>{{dato.codigocliente}}</B></td>
+	
+	<td><b>{{dato.nombre1}}<b>
+	<b>{{dato.nombre2}}<b></td>
+	<td><b>{{dato.apellido1}}<b>
+	<b>{{dato.apellido2}}<b></td>
+	{% empty %}
+	Aún no hay clientes registrados
+	{% endfor %}
+	
+	</tr>
+
+</table>
+

@@ -1,0 +1,30 @@
+<H2>Productos Registrados</H2>
+<table border=1>
+	<tr><td>codigo</td>
+		<td>Nombre</td>
+		<td>Representante</td>
+		<td>Codigo Departamento</td>
+		<td>Telefono 1</td>
+		<td>Telefono 2</td>
+		
+	</tr>
+
+	
+			
+	{% for dato in datos %}
+	<tr>
+	<td><B>{{dato.codigoproveedor}}</B></td>
+	
+	<td><b>{{dato.nombreproveedor}}<b></td>
+	<td><b>{{dato.representanteproveedor}}<b></td>
+	<td><b>{{dato.codigoDepartamento}}<b></td>
+	<td><b>{{dato.telefono1proveedor}}<b></td>
+	<td><b>{{dato.telefono2proveedor}}<b></td>
+	{% empty %}
+	Aún no hay Proveedores registrados
+	{% endfor %}
+	</tr>
+
+</table>
+
+

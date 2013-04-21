@@ -1,0 +1,30 @@
+<H2>Categorias Registradas</H2>
+
+<table border=1>
+	<tr><td>codigo</td>
+	<td>Nombre</td>
+	<td>Descripcion</td>
+	</tr>
+
+	
+		
+
+	{% for dato in datos %}
+	<tr>
+	<td><B>{{dato.codigocategoria}}</B></td>
+	
+	<td><b>{{dato.nombrecategoria}}</b></td>
+	
+	<td><b>{{dato.descripcioncategoria}}</b></td>
+
+	{% empty %}
+	Aún no hay categorias registradas
+	{% endfor %}
+
+	</tr>
+	
+
+
+
+</table>
+	
